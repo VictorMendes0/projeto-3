@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Mendes Baby</title>
     <link rel="stylesheet" href="/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="/style.css">
 
 </head>
-<body>
-    <header id="cabecalho">
-        <div id="carousel-exemplo" class="carousel carousel-fade slide " data-bs-ride="carousel">
+
+<body style="min-width: 372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+        <div class="container">
+            <h1>Titulo do site</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#product-list">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#promocoes">Promoções</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="cabecalho" class="container">
+        <div id="carousel-exemplo" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
-                    <img class="d-block mw100%" src="//via.placeholder.com/2560x300" alt="">
+                    <img class="d-block mw100%" src="/img teste/images/slide1.png" alt="">
                     <div class="carousel-caption">
                         <h2>Foto 1</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block mw100%" src="//via.placeholder.com/2560x300" alt="">
+                    <img class="d-block mw100%" src="/img teste/images/slide2.png" alt="">
                     <div class="carousel-caption">
                         <h2>Foto 2</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block mw100%" src="//via.placeholder.com/2560x300" alt="">
+                    <img class="d-block mw100%" src="/img teste/images/slide3.png">
                     <div class="carousel-caption">
                         <h2>Foto 3</h2>
                     </div>
@@ -45,230 +73,1029 @@
                 <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
             </div>
         </div>
-
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <h1>Titulo do site</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Inicio</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#product-list">Produtos</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#promocoes">Promoções</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </nav> 
-            </div>
-        </div>
+        <hr class="mt-3">
     </header>
-    <div class="container conteudo">
-    <section id="inicio" class="about-section">
-        <div class="container container-flex">
-            <div class="about-image">
-                <img src="//via.placeholder.com/640x640" alt="Imagem do instituto">
-            </div>
-            <div class="about-text">
-                <h2>Sobre</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore amet non, expedita nostrum adipisci, sequi sed aliquam veniam magnam optio quisquam tempore velit aliquid illum modi tenetur corrupti temporibus nobis.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum quisquam explicabo aliquid eveniet libero! Odio natus sint rem quas molestias optio ea? Beatae, sint aliquid error possimus repudiandae qui enim.
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="container">
-        <section id="product-list">
-            <h2>Produtos</h2>
-            <div class="container">
-                <nav class="nav nav-pills" role="tablist">
-                    <button data-bs-toggle="tab" data-bs-target="#aba1" type="button" class="nav-link active" role="tab">Brinquedos</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link" role="tab">Conjuntos Masculino</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link" role="tab">Conjuntos Feminino</button>
-                </nav>
-                <div class="tab-content">
-                    <div class="tab-pane show active fade" id="aba1" role="tabpanel">
-                        <div class="product-item">
-                            <img src="product1.jpg">
-                            <h3>Produto 1</h3>
-                            <p>Descrição do Produto 1</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product2.jpg">
-                            <h3>Produto 2</h3>
-                            <p>Descrição do Produto 2</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product3.jpg">
-                            <h3>Produto 3</h3>
-                            <p>Descrição do Produto 3</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product4.jpg">
-                            <h3>Produto 4</h3>
-                            <p>Descrição do Produto 4</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product5.jpg">
-                            <h3>Produto 5</h3>
-                            <p>Descrição do Produto 5</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product6.jpg">
-                            <h3>Produto 6</h3>
-                            <p>Descrição do Produto 6</p>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                    <div class="input-group input-group-sm">
+                        <input type="text class" class="form-control" placeholder="Digite aqui o que procura">
+                        <button class="btn btn-danger">
+                            Buscar
+                        </button>
                     </div>
-                    <div class="tab-pane fade" id="aba2" role="tabpanel">
-                        <div class="product-item">
-                            <img src="product1.jpg">
-                            <h3>Produto 1</h3>
-                            <p>Descrição do Produto 1</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product2.jpg">
-                            <h3>Produto 2</h3>
-                            <p>Descrição do Produto 2</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product3.jpg">
-                            <h3>Produto 3</h3>
-                            <p>Descrição do Produto 3</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product4.jpg">
-                            <h3>Produto 4</h3>
-                            <p>Descrição do Produto 4</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product5.jpg">
-                            <h3>Produto 5</h3>
-                            <p>Descrição do Produto 5</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product6.jpg">
-                            <h3>Produto 6</h3>
-                            <p>Descrição do Produto 6</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="aba3" role="tabpanel">
-                        <div class="product-item">
-                            <img src="product1.jpg">
-                            <h3>Produto 1</h3>
-                            <p>Descrição do Produto 1</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product2.jpg">
-                            <h3>Produto 2</h3>
-                            <p>Descrição do Produto 2</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product3.jpg">
-                            <h3>Produto 3</h3>
-                            <p>Descrição do Produto 3</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product4.jpg">
-                            <h3>Produto 4</h3>
-                            <p>Descrição do Produto 4</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product5.jpg">
-                            <h3>Produto 5</h3>
-                            <p>Descrição do Produto 5</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="product6.jpg">
-                            <h3>Produto 6</h3>
-                            <p>Descrição do Produto 6</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-        <section id="promocoes">
-            <h2>Promoções</h2>
-            <div class="carousel product-list-promo">
-                <div class="product-item">
-                <img src="product1.jpg">
-                <h3>Produto 1</h3>
-                <p>Descrição do Produto 1</p>
-                </div>
-                <div class="product-item">
-                <img src="product2.jpg">
-                <h3>Produto 2</h3>
-                <p>Descrição do Produto 2</p>
-                </div>
-                <div class="product-item">
-                <img src="product3.jpg">
-                <h3>Produto 3</h3>
-                <p>Descrição do Produto 3</p>
-                </div>
-                <div class="product-item">
-                <img src="product4.jpg">
-                <h3>Produto 4</h3>
-                <p>Descrição do Produto 4</p>
-                </div>
-                <div class="product-item">
-                <img src="product5.jpg">
-                <h3>Produto 5</h3>
-                <p>Descrição do Produto 5</p>
-                </div>
-                <div class="product-item">
-                <img src="product6.jpg">
-                <h3>Produto 6</h3>
-                <p>Descrição do Produto 6</p>
-                </div>
-            </div>
-        </section>
-        <section id="contato">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <form>
-                    <div class="form-campo">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-campo">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                    <div class="form-campo">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-campo">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
             </div>
-        </section>
+            <div class="col-12 col-md-7">
+                <div class="d-flex flex-row-reverse justify-content-center
+                    justify-content-md-start">
+                    <form class="ml-3 d-inline-block">
+                        <select name="" id="" class="form-select form-select-sm">
+                            <option value="">Ordenar pelo nome</option>
+                            <option value="">Ordenar pelo menor preço</option>
+                            <option value="">Ordenar pelo maior preço</option>
+                        </select>
+                    </form>
+                    <nav class="d-inline-block">
+                        <ul class="pagination pagination-sm my-0">
+                            <li class="page-item">
+                                <button class="page-link disabled">1</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">2</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">3</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">4</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">5</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link">6</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-3">
     </div>
-</div>
+
+    <main class="mb-5 pb-5 mb-md-0">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="container">
+            <section id="product-list">
+                <h2>Produtos</h2>
+                <nav class="nav nav-pills" role="tablist">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" type="button" class="nav-link active"
+                        role="tab">Brinquedos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link"
+                        role="tab">Conjuntos Masculino</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link"
+                        role="tab">Conjuntos Feminino</button>
+                </nav>
+            </section>
+            <div class="container tab-content flex-fill">
+                <div id="aba1" class="tab-pane fade show active" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light ">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div>
+                                        <button class="btn btn-light data-bs-interval">
+                                            <small class="text-danger"><b>Produto esgotado</b></small>
+                                        </button>
+                                    </div>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aba2" class="tab-pane fade" role="tabpanel">
+                    <div class="row" id="aba2" role="tabpanel">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light ">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/fusca.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aba3" class="tab-pane fade" role="tabpanel">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light ">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                            <div class="card text-center bg-light">
+                                <img src="/img teste/images/moto-bmw.png" class="card-img-top">
+                                <div class="card-header">
+                                    R$ 0,00
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome do produto</h5>
+                                    <p class="card-text">
+                                        Descrição
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <form class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar carrinho
+                                        </button>
+                                    </form>
+                                    <small class="text-success">Quantidade de unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="promocoes">
+                <h2>Promoções</h2>
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light carousel product-list-promo" data-bs-interval="3000"
+                            id="aba1">
+                            <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                            <div class="card-header">
+                                R$ 0,00
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nome do produto</h5>
+                                <p class="card-text">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-danger">
+                                        Adicionar carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">Quantidade de unidades</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light carousel product-list-promo" data-bs-interval="3000"
+                            id="aba1">
+                            <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                            <div class="card-header">
+                                R$ 0,00
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nome do produto</h5>
+                                <p class="card-text">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-danger">
+                                        Adicionar carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">Quantidade de unidades</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                        <div class="card text-center bg-light carousel product-list-promo" data-bs-interval="3000"
+                            id="aba1">
+                            <img src="/img teste/images/carro-bmw.png" class="card-img-top">
+                            <div class="card-header">
+                                R$ 0,00
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nome do produto</h5>
+                                <p class="card-text">
+                                    Descrição
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <form class="d-block">
+                                    <button class="btn btn-danger">
+                                        Adicionar carrinho
+                                    </button>
+                                </form>
+                                <small class="text-success">Quantidade de unidades</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </section>
+    </main>
+    <hr class="mt-3">
+    <div class="row pb-4">
+        <div class="col-12">
+            <div class="d-flex flex-row-reverse justify-content-center
+                    justify-content-md-start">
+                <form class="ml-3 d-inline-block">
+                    <select name="" id="" class="form-select form-select-sm">
+                        <option value="">Ordenar pelo nome</option>
+                        <option value="">Ordenar pelo menor preço</option>
+                        <option value="">Ordenar pelo maior preço</option>
+                    </select>
+                </form>
+                <nav class="d-inline-block">
+                    <ul class="pagination pagination-sm my-0">
+                        <li class="page-item">
+                            <button class="page-link disabled">1</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link">2</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link">3</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link">4</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link">5</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link">6</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    </div>
 
     <script src="/js/jquery.mask.min.js"></script>
     <script src="/js/jquery.validate.min.js"></script>
     <script src="/js/messages_pt_BR.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
+
 </html>

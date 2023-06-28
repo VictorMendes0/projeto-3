@@ -5,3 +5,33 @@ p.truncate-3l { /*Add nos cards com a descrição maior*/
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+form input,
+form textarea,
+#contato > form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+#cntato > form button {
+    background-color: #028091;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #07e2ff;
+}
